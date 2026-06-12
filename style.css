@@ -6,7 +6,7 @@
 
 body{
     overflow:hidden;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial;
     color:white;
 }
 
@@ -20,7 +20,6 @@ canvas{
 #ui{
     width:100vw;
     height:100vh;
-
     display:flex;
     justify-content:center;
     align-items:center;
@@ -29,13 +28,10 @@ canvas{
 .screen{
     width:80%;
     max-width:700px;
-
     text-align:center;
-
     background:rgba(0,0,0,0.45);
-
+    backdrop-filter:blur(12px);
     padding:40px;
-
     border-radius:20px;
 }
 
@@ -43,36 +39,16 @@ canvas{
     display:none;
 }
 
-h1{
-    margin-bottom:20px;
-}
-
-h2{
-    margin-bottom:15px;
-}
-
-h3{
-    margin-bottom:20px;
-}
-
-.instructions{
-    margin:25px 0;
-    line-height:2;
-}
+h1{ margin-bottom:20px; }
+h2{ margin-bottom:10px; }
+h3{ margin-bottom:20px; }
 
 button{
-    border:none;
-
-    padding:15px 30px;
-
+    padding:12px 25px;
     margin:10px;
-
-    border-radius:30px;
-
+    border:none;
+    border-radius:25px;
     cursor:pointer;
-
-    font-size:16px;
-
     transition:0.3s;
 }
 
@@ -93,10 +69,20 @@ button:hover{
 .choices{
     display:flex;
     flex-direction:column;
-    gap:15px;
 }
 
 .choices button{
     background:white;
-    color:#222;
+    color:black;
+}
+
+/* ⭐ 新增：上一題按鈕（最小影響） */
+.back-btn{
+    margin-top:15px;
+    background:#666;
+    color:white;
+}
+
+.back-btn:hover{
+    background:#888;
 }

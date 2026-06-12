@@ -3,40 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover Your Digital Planet</title>
+    <title>Digital Planet Quiz</title>
 
     <link rel="stylesheet" href="style.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
 </head>
+
 <body>
 
 <div id="ui">
 
-    <!-- Landing Page -->
+    <!-- Landing -->
     <div id="landing" class="screen">
-        <h1>🌎 Discover Your Digital Planet</h1>
+        <h1>🌌 Discover Your Digital Planet</h1>
 
-        <p>
-            回答 8 個問題，探索你的數位人格星球
-        </p>
+        <p>回答 8 個問題，生成你的專屬星球</p>
 
-        <div class="instructions">
-            <h3>如何互動</h3>
-            <p>點擊選項回答問題</p>
-            <p>完成測驗後會生成你的專屬星球</p>
-        </div>
-
-        <button id="startBtn">
-            開始測驗
-        </button>
+        <button id="startBtn">開始測驗</button>
     </div>
 
     <!-- Quiz -->
     <div id="quiz" class="screen hidden">
 
         <h2 id="questionNumber"></h2>
-
         <h3 id="questionText"></h3>
 
         <div class="choices">
@@ -44,18 +34,18 @@
             <button id="choiceB"></button>
         </div>
 
+        <!-- ⭐ 新增：上一題 -->
+        <button id="backBtn" class="back-btn">← 上一題</button>
+
     </div>
 
     <!-- Result -->
     <div id="result" class="screen hidden">
 
         <h1 id="planetName"></h1>
-
         <p id="planetDescription"></p>
 
-        <button id="restartBtn">
-            重新測驗
-        </button>
+        <button id="restartBtn">重新測驗</button>
 
     </div>
 
